@@ -1,0 +1,65 @@
+.navbar {
+  background: rgba(125, 36, 134, 0.8);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+.list ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0 !important;
+}
+
+.list ul li {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+.list ul li a{text-decoration: none;color: inherit;}
+.list ul .active{
+  background-color: white;
+  color: purple !important;
+  border-radius: 10px;
+  list-style: none;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.list2 {
+  display: none;
+  color: white;
+  width: 100%;
+  text-align: start;
+}
+.list2 ul li:hover {
+  color: white;
+}
+
+.list2 ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.icontoggle {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .search,
+  .list {
+    display: none;
+  }
+
+  .icontoggle {
+    display: block;
+  }
+
+  .icontoggle i {
+    color: white;
+    cursor: pointer;
+  }
+}
